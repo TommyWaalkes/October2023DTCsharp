@@ -34,7 +34,7 @@
             Console.WriteLine(greeting);
 
             //Say you're in a void method and want it to stop 
-            return; //<-- this kicks you of the method, I believe only C# and Javascript will allow you to do that
+            return; //<-- this kicks you out of the method, I believe only C# and Javascript will allow you to do that
         }
 
         public static bool AskToContinue()
