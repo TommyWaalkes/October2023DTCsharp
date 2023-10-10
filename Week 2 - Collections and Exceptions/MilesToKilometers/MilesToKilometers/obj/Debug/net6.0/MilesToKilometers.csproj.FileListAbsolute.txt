@@ -1,0 +1,14 @@
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\MilesToKilometers\MilesToKilometers\bin\Debug\net6.0\MilesToKilometers.exe
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\MilesToKilometers\MilesToKilometers\bin\Debug\net6.0\MilesToKilometers.deps.json
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\MilesToKilometers\MilesToKilometers\bin\Debug\net6.0\MilesToKilometers.runtimeconfig.json
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\MilesToKilometers\MilesToKilometers\bin\Debug\net6.0\MilesToKilometers.dll
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\MilesToKilometers\MilesToKilometers\bin\Debug\net6.0\MilesToKilometers.pdb
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\MilesToKilometers\MilesToKilometers\obj\Debug\net6.0\MilesToKilometers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\MilesToKilometers\MilesToKilometers\obj\Debug\net6.0\MilesToKilometers.AssemblyInfoInputs.cache
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\MilesToKilometers\MilesToKilometers\obj\Debug\net6.0\MilesToKilometers.AssemblyInfo.cs
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\MilesToKilometers\MilesToKilometers\obj\Debug\net6.0\MilesToKilometers.csproj.CoreCompileInputs.cache
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\MilesToKilometers\MilesToKilometers\obj\Debug\net6.0\MilesToKilometers.dll
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\MilesToKilometers\MilesToKilometers\obj\Debug\net6.0\refint\MilesToKilometers.dll
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\MilesToKilometers\MilesToKilometers\obj\Debug\net6.0\MilesToKilometers.pdb
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\MilesToKilometers\MilesToKilometers\obj\Debug\net6.0\MilesToKilometers.genruntimeconfig.cache
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\MilesToKilometers\MilesToKilometers\obj\Debug\net6.0\ref\MilesToKilometers.dll
