@@ -6,64 +6,138 @@ namespace PigLatin
     {
         static void Main(string[] args)
         {
-            string word = GetUserInput("Please input a word to translate to pig Latin");
+            string input = GetUserInput("Please input a word to translate to pig Latin");
+
+            string[] words = input.Split();
 
             //3 Cases we care about 
             //1) Start with a vowel - add ay onto the end
             //2) Start with a consonant - move leading consonants to the end and add ay 
             //3) No vowels - don't translate the word 
 
-            bool hasVowel = HasVowel(word);
-            Console.WriteLine(hasVowel);
-
-            if(hasVowel)
+            //if (word.Contains("'"))
+            //{
+            //    Console.WriteLine("This word is a contraction and can't translated to pig latin");
+            //    return;
+            //}
+            foreach (string word in words)
             {
-                int first = FindFirstVowel(word);
-                Console.WriteLine(first);
+                Translate(word);
+            }
+          
+        }
 
-                //This means the word starts with vowel 
-                if(first == 0)
+        public static void Translate(string word)
+        {
+            bool dontTranslate = ContainsNumberOrSymbol(word);
+            bool hasVowel = HasVowel(word);
+            if (word.Length > 0)
+            {
+                if (dontTranslate == false)
                 {
-                    word += "way";
+
+                    string[] punct = { ",", ".", "!", "?" };
+                    bool hasPunct = false;
+                    foreach (string p in punct)
+                    {
+                        if (word.Contains(p))
+                        {
+                            hasPunct = true;
+                        }
+                    }
+
+                    char ending = ' ';
+                    if (hasPunct)
+                    {
+                        ending = word[word.Length - 1];
+                        word = word.Substring(0, word.Length - 1);
+                        //Console.WriteLine(word);
+                    }
+
+
+                    if (hasVowel)
+                    {
+                        int first = FindFirstVowel(word);
+                        //Console.WriteLine(first);
+
+                        //This means the word starts with vowel 
+                        if (first == 0)
+                        {
+                            word += "way";
+                        }
+                        else
+                        {
+                            //Using the index of the first vowel, cut off everything up to 
+                            //But not including the first vowel.
+                            bool startWithUpper = char.IsUpper(word[0]);
+
+                            string postFix = word.Substring(0, first);
+
+                            //Console.WriteLine(postFix);
+
+                            string preFix = word.Substring(first);
+                            //Console.WriteLine(preFix);
+
+
+                            if (startWithUpper)
+                            {
+                                //string firstLetter = preFix[0].ToString().ToUpper();
+
+                                //char c = char.Parse(firstLetter);
+                                //char[] letters = preFix.ToCharArray();
+                                //letters[0] = c;
+                                //preFix = new String(letters);
+
+                                preFix = new CultureInfo("en-us", false).TextInfo.ToTitleCase(preFix);
+                                word = preFix + postFix + "AY";
+
+                            }
+                            else
+                            {
+                                word = preFix + postFix + "ay";
+                            }
+                        }
+
+                        if (hasPunct)
+                        {
+                            word += ending;
+                        }
+
+                        Console.Write(word +" ");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{word} cannot be translated into pig Latin");
+                    }
                 }
                 else
                 {
-                    //Using the index of the first vowel, cut off everything up to 
-                    //But not including the first vowel.
-                    bool startWithUpper = char.IsUpper(word[0]);
-
-                    string postFix = word.Substring(0, first).ToLower();
-
-                    Console.WriteLine(postFix);
-
-                    string preFix = word.Substring(first);
-                    Console.WriteLine(preFix);
-
-
-                    if (startWithUpper)
-                    {
-                        //string firstLetter = preFix[0].ToString().ToUpper();
-
-                        //char c = char.Parse(firstLetter);
-                        //char[] letters = preFix.ToCharArray();
-                        //letters[0] = c;
-                        //preFix = new String(letters);
-
-                        preFix = new CultureInfo("en-us", false).TextInfo.ToTitleCase(preFix);
-                    }
-
-                    word = preFix + postFix + "ay";
+                    Console.WriteLine("Skipping the current word as it contains symbols or numbers");
                 }
-
-                Console.WriteLine(word);
             }
             else
             {
-                Console.WriteLine($"{word} cannot be translated into pig Latin");
+                Console.WriteLine("No input was given, word is 0 character long and can't be translated");
             }
 
         }
-        
+
+        public static bool ContainsNumberOrSymbol(string input)
+        {
+            string[] skips = { "@", "#", "$", "%", "^", "&", "*", "(", ")" };
+
+            for(int i =0; i < input.Length; i++)
+            {
+                string s = input[i].ToString();
+                char c = input[i];
+                if(skips.Contains(s) || char.IsDigit(c))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         public static int FindFirstVowel(string word)
         {
             string[] vowels = { "a", "e", "i", "o", "u", "A", "E", "I", "O", "U" };
