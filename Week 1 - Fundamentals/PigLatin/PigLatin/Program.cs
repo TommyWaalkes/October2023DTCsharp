@@ -9,6 +9,7 @@ namespace PigLatin
             string input = GetUserInput("Please input a word to translate to pig Latin");
 
             string[] words = input.Split();
+            words.
 
             //3 Cases we care about 
             //1) Start with a vowel - add ay onto the end
