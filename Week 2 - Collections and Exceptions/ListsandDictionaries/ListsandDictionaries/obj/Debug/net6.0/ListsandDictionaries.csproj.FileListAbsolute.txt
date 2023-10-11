@@ -1,0 +1,14 @@
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\ListsandDictionaries\ListsandDictionaries\bin\Debug\net6.0\ListsandDictionaries.exe
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\ListsandDictionaries\ListsandDictionaries\bin\Debug\net6.0\ListsandDictionaries.deps.json
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\ListsandDictionaries\ListsandDictionaries\bin\Debug\net6.0\ListsandDictionaries.runtimeconfig.json
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\ListsandDictionaries\ListsandDictionaries\bin\Debug\net6.0\ListsandDictionaries.dll
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\ListsandDictionaries\ListsandDictionaries\bin\Debug\net6.0\ListsandDictionaries.pdb
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\ListsandDictionaries\ListsandDictionaries\obj\Debug\net6.0\ListsandDictionaries.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\ListsandDictionaries\ListsandDictionaries\obj\Debug\net6.0\ListsandDictionaries.AssemblyInfoInputs.cache
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\ListsandDictionaries\ListsandDictionaries\obj\Debug\net6.0\ListsandDictionaries.AssemblyInfo.cs
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\ListsandDictionaries\ListsandDictionaries\obj\Debug\net6.0\ListsandDictionaries.csproj.CoreCompileInputs.cache
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\ListsandDictionaries\ListsandDictionaries\obj\Debug\net6.0\ListsandDictionaries.dll
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\ListsandDictionaries\ListsandDictionaries\obj\Debug\net6.0\refint\ListsandDictionaries.dll
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\ListsandDictionaries\ListsandDictionaries\obj\Debug\net6.0\ListsandDictionaries.pdb
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\ListsandDictionaries\ListsandDictionaries\obj\Debug\net6.0\ListsandDictionaries.genruntimeconfig.cache
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\ListsandDictionaries\ListsandDictionaries\obj\Debug\net6.0\ref\ListsandDictionaries.dll
