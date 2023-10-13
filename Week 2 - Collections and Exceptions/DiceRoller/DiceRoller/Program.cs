@@ -56,6 +56,7 @@
         public static string GetRandomName()
         {
             Random r = new Random();
+            //Roll a large dice and assign each person to range 
             string[] names = { "Tommy", "Joey", "Phil", "Jake", "Hannah Monsanto" };
 
             //The reason the max on random is exclusive is so it works easier with Arrays 
