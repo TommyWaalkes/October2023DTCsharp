@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thoma\\Desktop\\Class Repo Oct 2023\\RoomCalculator\\RoomCalculator\\RoomCalculator.csproj",
+      "projectUniqueName": "C:\\Users\\thoma\\Desktop\\Class Repo Oct 2023\\Week 1 - Fundamentals\\RoomCalculator\\RoomCalculator\\RoomCalculator.csproj",
       "projectName": "RoomCalculator",
-      "projectPath": "C:\\Users\\thoma\\Desktop\\Class Repo Oct 2023\\RoomCalculator\\RoomCalculator\\RoomCalculator.csproj",
+      "projectPath": "C:\\Users\\thoma\\Desktop\\Class Repo Oct 2023\\Week 1 - Fundamentals\\RoomCalculator\\RoomCalculator\\RoomCalculator.csproj",
       "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thoma\\Desktop\\Class Repo Oct 2023\\RoomCalculator\\RoomCalculator\\obj\\",
+      "outputPath": "C:\\Users\\thoma\\Desktop\\Class Repo Oct 2023\\Week 1 - Fundamentals\\RoomCalculator\\RoomCalculator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\thoma\\AppData\\Roaming\\NuGet\\NuGet.Config",
