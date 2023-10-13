@@ -1,0 +1,14 @@
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DebuggerExample\DebuggerExample\bin\Debug\net6.0\DebuggerExample.exe
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DebuggerExample\DebuggerExample\bin\Debug\net6.0\DebuggerExample.deps.json
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DebuggerExample\DebuggerExample\bin\Debug\net6.0\DebuggerExample.runtimeconfig.json
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DebuggerExample\DebuggerExample\bin\Debug\net6.0\DebuggerExample.dll
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DebuggerExample\DebuggerExample\bin\Debug\net6.0\DebuggerExample.pdb
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DebuggerExample\DebuggerExample\obj\Debug\net6.0\DebuggerExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DebuggerExample\DebuggerExample\obj\Debug\net6.0\DebuggerExample.AssemblyInfoInputs.cache
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DebuggerExample\DebuggerExample\obj\Debug\net6.0\DebuggerExample.AssemblyInfo.cs
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DebuggerExample\DebuggerExample\obj\Debug\net6.0\DebuggerExample.csproj.CoreCompileInputs.cache
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DebuggerExample\DebuggerExample\obj\Debug\net6.0\DebuggerExample.dll
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DebuggerExample\DebuggerExample\obj\Debug\net6.0\refint\DebuggerExample.dll
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DebuggerExample\DebuggerExample\obj\Debug\net6.0\DebuggerExample.pdb
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DebuggerExample\DebuggerExample\obj\Debug\net6.0\DebuggerExample.genruntimeconfig.cache
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DebuggerExample\DebuggerExample\obj\Debug\net6.0\ref\DebuggerExample.dll

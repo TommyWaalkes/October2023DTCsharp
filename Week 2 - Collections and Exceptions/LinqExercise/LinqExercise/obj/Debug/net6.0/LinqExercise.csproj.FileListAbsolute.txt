@@ -1,0 +1,14 @@
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\LinqExercise\LinqExercise\bin\Debug\net6.0\LinqExercise.exe
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\LinqExercise\LinqExercise\bin\Debug\net6.0\LinqExercise.deps.json
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\LinqExercise\LinqExercise\bin\Debug\net6.0\LinqExercise.runtimeconfig.json
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\LinqExercise\LinqExercise\bin\Debug\net6.0\LinqExercise.dll
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\LinqExercise\LinqExercise\bin\Debug\net6.0\LinqExercise.pdb
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\LinqExercise\LinqExercise\obj\Debug\net6.0\LinqExercise.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\LinqExercise\LinqExercise\obj\Debug\net6.0\LinqExercise.AssemblyInfoInputs.cache
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\LinqExercise\LinqExercise\obj\Debug\net6.0\LinqExercise.AssemblyInfo.cs
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\LinqExercise\LinqExercise\obj\Debug\net6.0\LinqExercise.csproj.CoreCompileInputs.cache
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\LinqExercise\LinqExercise\obj\Debug\net6.0\LinqExercise.dll
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\LinqExercise\LinqExercise\obj\Debug\net6.0\refint\LinqExercise.dll
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\LinqExercise\LinqExercise\obj\Debug\net6.0\LinqExercise.pdb
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\LinqExercise\LinqExercise\obj\Debug\net6.0\LinqExercise.genruntimeconfig.cache
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\LinqExercise\LinqExercise\obj\Debug\net6.0\ref\LinqExercise.dll

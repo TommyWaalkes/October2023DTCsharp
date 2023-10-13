@@ -39,6 +39,8 @@
 
         //Why don't show up more often? They create a relationship between 2 pieces of data. 
         //The reason is that object handle representing a lot more clearly 
+        //In dictionaries keys must all be unique, you can't use the same key more than onces 
+        //Values however, may be reused as much as you want
         public static void Dictionary()
         {
             //The first type is the key type 

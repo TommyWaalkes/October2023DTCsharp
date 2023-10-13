@@ -1,0 +1,14 @@
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DiceRoller\DiceRoller\bin\Debug\net6.0\DiceRoller.exe
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DiceRoller\DiceRoller\bin\Debug\net6.0\DiceRoller.deps.json
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DiceRoller\DiceRoller\bin\Debug\net6.0\DiceRoller.runtimeconfig.json
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DiceRoller\DiceRoller\bin\Debug\net6.0\DiceRoller.dll
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DiceRoller\DiceRoller\bin\Debug\net6.0\DiceRoller.pdb
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DiceRoller\DiceRoller\obj\Debug\net6.0\DiceRoller.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DiceRoller\DiceRoller\obj\Debug\net6.0\DiceRoller.AssemblyInfoInputs.cache
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DiceRoller\DiceRoller\obj\Debug\net6.0\DiceRoller.AssemblyInfo.cs
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DiceRoller\DiceRoller\obj\Debug\net6.0\DiceRoller.csproj.CoreCompileInputs.cache
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DiceRoller\DiceRoller\obj\Debug\net6.0\DiceRoller.dll
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DiceRoller\DiceRoller\obj\Debug\net6.0\refint\DiceRoller.dll
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DiceRoller\DiceRoller\obj\Debug\net6.0\DiceRoller.pdb
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DiceRoller\DiceRoller\obj\Debug\net6.0\DiceRoller.genruntimeconfig.cache
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 2 - Collections and Exceptions\DiceRoller\DiceRoller\obj\Debug\net6.0\ref\DiceRoller.dll
