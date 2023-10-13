@@ -4,8 +4,7 @@
     {
         static void Main(string[] args)
         {
-            
-
+            Console.WriteLine("Hello world, this is a spiffy program!!!");
             bool goOn = true;
 
             while (goOn == true)
