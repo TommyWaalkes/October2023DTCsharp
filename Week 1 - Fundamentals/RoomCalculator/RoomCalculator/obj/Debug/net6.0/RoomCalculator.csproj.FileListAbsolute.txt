@@ -12,3 +12,17 @@ C:\Users\thoma\Desktop\Class Repo Oct 2023\RoomCalculator\RoomCalculator\obj\Deb
 C:\Users\thoma\Desktop\Class Repo Oct 2023\RoomCalculator\RoomCalculator\obj\Debug\net6.0\RoomCalculator.pdb
 C:\Users\thoma\Desktop\Class Repo Oct 2023\RoomCalculator\RoomCalculator\obj\Debug\net6.0\RoomCalculator.genruntimeconfig.cache
 C:\Users\thoma\Desktop\Class Repo Oct 2023\RoomCalculator\RoomCalculator\obj\Debug\net6.0\ref\RoomCalculator.dll
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 1 - Fundamentals\RoomCalculator\RoomCalculator\bin\Debug\net6.0\RoomCalculator.exe
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 1 - Fundamentals\RoomCalculator\RoomCalculator\bin\Debug\net6.0\RoomCalculator.deps.json
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 1 - Fundamentals\RoomCalculator\RoomCalculator\bin\Debug\net6.0\RoomCalculator.runtimeconfig.json
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 1 - Fundamentals\RoomCalculator\RoomCalculator\bin\Debug\net6.0\RoomCalculator.dll
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 1 - Fundamentals\RoomCalculator\RoomCalculator\bin\Debug\net6.0\RoomCalculator.pdb
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 1 - Fundamentals\RoomCalculator\RoomCalculator\obj\Debug\net6.0\RoomCalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 1 - Fundamentals\RoomCalculator\RoomCalculator\obj\Debug\net6.0\RoomCalculator.AssemblyInfoInputs.cache
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 1 - Fundamentals\RoomCalculator\RoomCalculator\obj\Debug\net6.0\RoomCalculator.AssemblyInfo.cs
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 1 - Fundamentals\RoomCalculator\RoomCalculator\obj\Debug\net6.0\RoomCalculator.csproj.CoreCompileInputs.cache
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 1 - Fundamentals\RoomCalculator\RoomCalculator\obj\Debug\net6.0\RoomCalculator.dll
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 1 - Fundamentals\RoomCalculator\RoomCalculator\obj\Debug\net6.0\refint\RoomCalculator.dll
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 1 - Fundamentals\RoomCalculator\RoomCalculator\obj\Debug\net6.0\RoomCalculator.pdb
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 1 - Fundamentals\RoomCalculator\RoomCalculator\obj\Debug\net6.0\RoomCalculator.genruntimeconfig.cache
+C:\Users\thoma\Desktop\Class Repo Oct 2023\Week 1 - Fundamentals\RoomCalculator\RoomCalculator\obj\Debug\net6.0\ref\RoomCalculator.dll
