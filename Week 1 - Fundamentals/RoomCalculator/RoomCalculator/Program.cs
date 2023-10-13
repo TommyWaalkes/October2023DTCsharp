@@ -5,6 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Hello world, this is a spiffy program!!!");
+            Console.WriteLine("In the burger world, tommy is king");
             bool goOn = true;
 
             while (goOn == true)
