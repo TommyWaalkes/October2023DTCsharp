@@ -1,0 +1,14 @@
+C:\Users\thoma\Desktop\Mock Assessment 2\practice-assessment-2-TommyWaalkes-3\MockAssessment2\MockAssessment2\bin\Debug\net6.0\MockAssessment2.exe
+C:\Users\thoma\Desktop\Mock Assessment 2\practice-assessment-2-TommyWaalkes-3\MockAssessment2\MockAssessment2\bin\Debug\net6.0\MockAssessment2.deps.json
+C:\Users\thoma\Desktop\Mock Assessment 2\practice-assessment-2-TommyWaalkes-3\MockAssessment2\MockAssessment2\bin\Debug\net6.0\MockAssessment2.runtimeconfig.json
+C:\Users\thoma\Desktop\Mock Assessment 2\practice-assessment-2-TommyWaalkes-3\MockAssessment2\MockAssessment2\bin\Debug\net6.0\MockAssessment2.dll
+C:\Users\thoma\Desktop\Mock Assessment 2\practice-assessment-2-TommyWaalkes-3\MockAssessment2\MockAssessment2\bin\Debug\net6.0\MockAssessment2.pdb
+C:\Users\thoma\Desktop\Mock Assessment 2\practice-assessment-2-TommyWaalkes-3\MockAssessment2\MockAssessment2\obj\Debug\net6.0\MockAssessment2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thoma\Desktop\Mock Assessment 2\practice-assessment-2-TommyWaalkes-3\MockAssessment2\MockAssessment2\obj\Debug\net6.0\MockAssessment2.AssemblyInfoInputs.cache
+C:\Users\thoma\Desktop\Mock Assessment 2\practice-assessment-2-TommyWaalkes-3\MockAssessment2\MockAssessment2\obj\Debug\net6.0\MockAssessment2.AssemblyInfo.cs
+C:\Users\thoma\Desktop\Mock Assessment 2\practice-assessment-2-TommyWaalkes-3\MockAssessment2\MockAssessment2\obj\Debug\net6.0\MockAssessment2.csproj.CoreCompileInputs.cache
+C:\Users\thoma\Desktop\Mock Assessment 2\practice-assessment-2-TommyWaalkes-3\MockAssessment2\MockAssessment2\obj\Debug\net6.0\MockAssessment2.dll
+C:\Users\thoma\Desktop\Mock Assessment 2\practice-assessment-2-TommyWaalkes-3\MockAssessment2\MockAssessment2\obj\Debug\net6.0\refint\MockAssessment2.dll
+C:\Users\thoma\Desktop\Mock Assessment 2\practice-assessment-2-TommyWaalkes-3\MockAssessment2\MockAssessment2\obj\Debug\net6.0\MockAssessment2.pdb
+C:\Users\thoma\Desktop\Mock Assessment 2\practice-assessment-2-TommyWaalkes-3\MockAssessment2\MockAssessment2\obj\Debug\net6.0\MockAssessment2.genruntimeconfig.cache
+C:\Users\thoma\Desktop\Mock Assessment 2\practice-assessment-2-TommyWaalkes-3\MockAssessment2\MockAssessment2\obj\Debug\net6.0\ref\MockAssessment2.dll
