@@ -15,7 +15,7 @@ namespace IntroToOOP
         //3) Methods - game logic - compare the draws between the 2 players
         List<Card> p1Deck { get; set; } = new List<Card>();
         List<Card> p2Deck { get; set; } = new List<Card>();
-        int currentDeckIndex = 0; 
+        int Round { get; set; } = 1; 
         List<Card> p1Discard { get; set; } = new List<Card>();
         List<Card> p2Discard { get; set; } = new List<Card>();
 
@@ -48,17 +48,67 @@ namespace IntroToOOP
 
         public void RunTurn()
         {
-            Card p1 = p1Deck[currentDeckIndex];
-            Card p2 = p2Deck[currentDeckIndex];
+            Console.WriteLine();
+            Console.WriteLine("Round: "+Round);
+            Round++;
+            if (p1Deck.Count == 0)
+            {
+                if(p1Discard.Count == 0)
+                {
+                    Console.WriteLine("Player 1 loses");
+                    return;
+                }
+                else
+                {
+                    Shuffle(p1Discard);
+                    p1Deck.AddRange(p1Discard);
+                    p1Discard.Clear();
+                }
+            }
 
-            if(p1.Value > p2.Value)
+            if(p2Deck.Count == 0)
+            {
+                if(p2Discard.Count == 0)
+                {
+                    Console.WriteLine("Player 2 loses");
+                    return;
+                }
+                else
+                {
+                    Shuffle(p2Discard);
+                    p2Deck.AddRange(p2Discard);
+                    p2Discard.Clear();
+                }
+            }
+            Card p1 = p1Deck[0];
+            Card p2 = p2Deck[0];
+            //Card p1 = new Card("Hearts", 5);
+            //Card p2 = new Card("Hearts", 5);
+            p1Deck.Remove(p1);
+            p2Deck.Remove(p2);
+            Console.WriteLine("Player 1 draws: ");
+            p1.PrintInfo();
+            Console.WriteLine("Player 2 draws: ");
+            p2.PrintInfo();
+            if (p1.Value > p2.Value)
             {
                 //Player 1 wins the round 
-                p1Deck.Remove(p1);
-                p2Deck.Remove(p2);
                 p1Discard.Add(p1);
                 p1Discard.Add(p2);
+                Console.WriteLine("Player 1 wins the round");
             }
+            else if(p2.Value > p1.Value)
+            {
+                p2Discard.Add(p1);
+                p2Discard.Add(p2);
+                Console.WriteLine("Player 2 wins the round");
+            }
+            else if(p2.Value == p1.Value) 
+            {
+                Console.WriteLine("Draw, let's the next cards");
+            }
+
+            RunTurn();
         }
 
     }
