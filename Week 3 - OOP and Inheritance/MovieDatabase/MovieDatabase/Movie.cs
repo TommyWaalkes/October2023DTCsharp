@@ -17,8 +17,10 @@ namespace MovieDatabase
     }
     internal class Movie
     {
+        //C# automatically puts get and set onto varialbes 
+        //Older versions would not allow you to do that
         public string Title;
-        public Category Category { get; set; }
+        public Category Category;
         public double Runtime { get; set; }
         public int ReleaseYear { get; set; }
 
