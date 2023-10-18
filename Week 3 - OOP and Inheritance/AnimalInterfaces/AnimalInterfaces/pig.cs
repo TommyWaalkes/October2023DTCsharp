@@ -14,6 +14,14 @@ namespace AnimalInterfaces
         public int plantsEaten { get; set; }
         public int meatEaten { get; set; }
 
+        //This is a lambda attached to a property. 
+        //Any variables I reference this lambda will sit and listen to 
+        //and update the value of my property any time any of those variables changes
+        //I don't have to remember to update this variable. 
+        public bool EatenEnough => caloriesNeeded <= caloriesEaten 
+            && plantsEaten >=1000 
+            && meatEaten >=1000;
+
         public Pig()
         {
             caloriesEaten = 0;
