@@ -51,7 +51,31 @@ namespace DependencyInjectionExample
 
     public interface IGetUserInput
     {
-        void GetUserInput(string prompt);
+        string GetUserInput(string prompt);
+    }
+
+    public class GetString : IGetUserInput
+    {
+        public string GetUserInput(string prompt)
+        {
+            Console.WriteLine(prompt);
+            return Console.ReadLine();
+        }
+    }
+
+    public class GetArea : IGetUserInput
+    {
+        public string GetUserInput(string prompt)
+        {
+            Console.WriteLine(prompt);
+            Console.WriteLine("Please input a length");
+            int len = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please input a width");
+            int width = int.Parse(Console.ReadLine());
+
+            return $"Width: {width}, Length:{len}";
+        }
     }
 
     public class WelcomeView 
@@ -72,30 +96,24 @@ namespace DependencyInjectionExample
         }
     }
 
-    public class SelectEventView : IView
+    public class SelectEventView
     {
         public List<HistoryEvent> Events { get; set; }
+        public IGetUserInput UserInput { get; set; }
 
-        public SelectEventView(List<HistoryEvent> events)
+        public SelectEventView(List<HistoryEvent> events, IGetUserInput getUserInputMethod)
         {
             Events = events;
+            UserInput = getUserInputMethod;
         }
 
-
-        public void Display()
-        {
-
-        }
-
-        public string GetUserInput(string prompt)
+        public string GetUserInput()
         {
             for (int i = 0; i < Events.Count; i++)
             {
                 Console.WriteLine(i + ": " + Events[i].Name);
             }
-            Console.WriteLine(prompt);
-
-            return Console.ReadLine();
+            return UserInput.GetUserInput("Please select a country from the list by index");
         }
     }
 
