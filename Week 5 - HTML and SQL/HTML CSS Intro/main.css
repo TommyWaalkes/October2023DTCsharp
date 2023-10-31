@@ -1,0 +1,42 @@
+/* When I start on a website, I like to define my general CSS Rules first, 
+stuff like the default font, default sizing etc. 
+*/
+/*A big job of element tags is to act as your default styles*/
+p{
+    color:yellow;
+}
+
+h2{
+    color: red; 
+}
+
+body{
+    background-color: chartreuse;
+}
+
+.arialFont{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*This for centering any non-text element. Text elements use text-align*/
+.centerElement{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* for an element to be centered it needs to be smaller than its parent element 
+which is why we need a class to set our width*/ 
+
+.width80{
+    width: 80%;
+}
+
+#centerText{
+    text-align: center;
+}
+
+.blackBorder{
+    /*First param is thickness of the border, 2nd is style, usually solid, 3rd is the color */
+    /*Borders are useful for debugging the box model of elements */
+    border: 2px solid black;
+}
