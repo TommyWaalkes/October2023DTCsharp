@@ -1,0 +1,27 @@
+<h2>Scammy Form</h2>
+
+<form>
+    <p>Name</p>
+    <!--Type sets the kind of input and name sets how our backend 
+    will label this form input. Most frameworks want you to label your inputs-->
+    <input type="text" name="name"/>
+    <br/> 
+    <p>Social Security Number</p>
+    <input type="text" name="social" pattern="^(?!0{3})(?!6{3})[0-8]\d{2}-(?!0{2})\d{2}-(?!0{4})\d{4}$"/>
+    <br/>
+    <p>Phone Number</p>
+    <!--Type=tel does not work, you'll need to validate phone numbers another way. It's a leftover -->
+    <input type="tel" name="phoneNumber" pattern="^(1-)?\d{3}-\d{3}-\d{4}$"/>
+    <br/>
+    <p>Mom's Maiden Name</p>
+    <input type="text" name="maiden"/>
+    <br/>
+    <p>CCV</p>
+    <input type="number" name="ccv" min="100" max="999"/>
+    <br/>
+    <p>Sign up for Scam news!</p>
+    <input type="checkbox" name="newsletter"/>
+    <br/>
+    <input type="submit" value="Submit Info"/>
+
+</form>

@@ -1,0 +1,22 @@
+﻿<!--In order to take a model we need to set the equivalent of parameter in C# at the top of our view-->
+<!--This tells the view to expect an animal object, and like a parameter, .net will complain if it does not get an object-->
+@model Animal
+
+
+<!--to use a model you will need to use @Model, treat it like an object (or like a list) -->
+
+<p>Name: @Model.Name</p>
+<p>Id: @Model.Id</p>
+<p>Species: @Model.Species</p>
+<p>Has Claws: @Model.HasClaws</p>
+
+@* @if (Model.HasClaws)
+{
+    <p>This animal has claws</p>
+}
+else
+{
+    <h2>This animal does not have claws</h2>
+} *@
+
+<p>@Model</p>

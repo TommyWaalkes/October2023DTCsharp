@@ -1,0 +1,33 @@
+﻿@model Animal
+
+<h2>Animal Form</h2>
+
+<!--The names on the form must match the spelling an casing of the names of my properties in my model
+I intend for this form to make an animal model
+
+-->
+<form asp-action="Animal" asp-controller="Home" method="post">
+    <p>Id</p>
+    <input type="number" name="Id"/>
+    <br/>
+
+    <p>Name</p>
+    <input type="text" name="Name"/>
+    <br/>
+
+    <p>Calories Needed</p>
+    <input type="number" name="CaloriesNeeded"/>
+    <br/>
+
+    <p>Species</p>
+    <input type="text" name="Species"/>
+    <br/>
+
+    <p>Has Claws</p>
+
+    <input asp-for="@Model.HasClaws" type="checkbox" />
+    <br/>
+    <input type="submit"/>
+
+
+</form>
