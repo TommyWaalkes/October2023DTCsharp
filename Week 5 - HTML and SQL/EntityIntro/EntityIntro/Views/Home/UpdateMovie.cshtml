@@ -1,0 +1,19 @@
+﻿@model Movie
+
+<h2>Update @Model.Name</h2>
+
+<form method="post">
+    <p>Name</p>
+    <input type="text" name="Name" maxlength="20" value="@Model.Name" />
+
+    <p>Run Time in minutes</p>
+    <input type="number" name="Runtime" value="@Model.RunTime" />
+
+    <p>Release Year</p>
+    <input type="number" name="ReleaseYear" min="1880" max="@DateTime.Now.Year" value="@Model.ReleaseYear"/>
+
+    <p>Genre</p>
+    <input type="text" name="Genre" maxlength="20" value="@Model.Genre"/>
+
+    <input type="submit" value="Update" />
+</form>

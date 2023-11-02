@@ -21,6 +21,12 @@ namespace EntityIntro.Controllers
             return View(movies);
         }
 
+        public IActionResult Movie(int id)
+        {
+            Movie m = db.Movies.Find(id);
+            return View(m);
+        }
+
         //This action is a get that exists to display our view 
         public IActionResult CreateMovie()
         {
@@ -35,6 +41,36 @@ namespace EntityIntro.Controllers
             //This needs to be called after any create, delete or edit actions 
             db.SaveChanges();
 
+            return RedirectToAction("Index");
+        }
+
+        //We will use the id to find the movie we want to update
+        public IActionResult UpdateMovie(int id)
+        {
+            Movie update = db.Movies.Find(id);
+            return View(update);
+        }
+
+        [HttpPost]
+        public IActionResult UpdateMovie(Movie m)
+        {
+            db.Movies.Update(m);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        //This display a view asking if you are sure you want to delete this movie
+        public IActionResult DeleteMovie(int id)
+        {
+            Movie m = db.Movies.Find(id);
+            return View(m);
+        }
+       
+        public IActionResult IAmSureDeleteMovie(int id)
+        {
+            Movie m = db.Movies.Find(id);
+            db.Movies.Remove(m);
+            db.SaveChanges();
             return RedirectToAction("Index");
         }
 

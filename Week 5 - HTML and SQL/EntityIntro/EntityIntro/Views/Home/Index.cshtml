@@ -8,9 +8,13 @@
         <!--The at symbol symbol next to a variable means print it into the HTML-->
         <h2>Title: @m.Name</h2>
         <p>Id: @m.Id</p>
-        <p>Release Year: @m.ReleaseYear</p>
+       @*  <p>Release Year: @m.ReleaseYear</p>
         <p>Genre: @m.Genre</p>
-        <p>Run Time: @m.RunTime</p>
+        <p>Run Time: @m.RunTime</p> *@
+        <!--if a route needs some kind of data, commonly a primary, you may pass it along by using the asp-route-NAMEOFVAR -->
+        <a asp-action="Movie" asp-controller="Home" asp-route-Id="@m.Id"><p>View @m.Name</p></a>
+        <a asp-action="UpdateMovie" asp-controller="Home" asp-route-Id="@m.Id"><p>Update @m.Name</p></a>
+        <a asp-action="DeleteMovie" asp-controller="Home" asp-route-Id="@m.Id"><p>Delete @m.Name</p></a>
     </div>
 }
 
