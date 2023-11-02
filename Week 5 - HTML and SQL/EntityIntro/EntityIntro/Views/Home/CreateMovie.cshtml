@@ -1,0 +1,17 @@
+﻿<h2>Add in a new Movie</h2>
+
+<form method="post">
+    <p>Name</p>
+    <input type="text" name="Name" maxlength="20"/>
+
+    <p>Run Time in minutes</p>
+    <input type="number" name="Runtime"/>
+
+    <p>Release Year</p>
+    <input type="number" name="ReleaseYear" min="1880" max="@DateTime.Now.Year"/>
+
+    <p>Genre</p>
+    <input type="text" name="Genre" maxlength="20"/>
+
+    <input type="submit" value="Create a new movie"/>
+</form>

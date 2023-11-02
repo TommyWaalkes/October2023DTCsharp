@@ -1,0 +1,20 @@
+﻿
+<h2>Register a new user</h2>
+
+<form asp-action="LongResult" asp-controller="Home">
+    <p>First Name</p>
+    <input type="text" name="FirstName"/>
+
+    <p>Last Name</p>
+    <input type="text" name="LastName"/>
+
+    <!--HTML can validate for many common situations, anything more specifc you'll need code in either your controller or to steal a regex pattern-->
+    <p>Email</p>
+    <input type="email" name="Email"/>
+
+    <!--The password input type does not have any security on it, it merely hides what you type into it.-->
+    <p>Password</p>
+    <input type="password" name="Password" required/>
+
+    <input type="submit" value="Register new User"/>
+</form>

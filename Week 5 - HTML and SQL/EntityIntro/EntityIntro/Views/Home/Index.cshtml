@@ -1,0 +1,17 @@
+﻿@model List<Movie>
+
+<!--Razor has all of the same loops as C#, generally you tend to use foreach or for most of the time-->
+
+@foreach(Movie m in Model)
+{
+    <div style="margin-bottom:20px; border: 3px solid black">
+        <!--The at symbol symbol next to a variable means print it into the HTML-->
+        <h2>Title: @m.Name</h2>
+        <p>Id: @m.Id</p>
+        <p>Release Year: @m.ReleaseYear</p>
+        <p>Genre: @m.Genre</p>
+        <p>Run Time: @m.RunTime</p>
+    </div>
+}
+
+<a asp-action="CreateMovie" asp-controller="Home">Add in a new movie</a>
