@@ -1,0 +1,14 @@
+﻿@model List<string>
+<form asp-action="Result" asp-controller="Home">
+    <p>Select a dog breed</p>
+    <select name="breed">
+        @foreach(string breed in Model)
+        {
+            <option value="@breed">@breed</option>
+        }
+
+    </select>
+    <input type="submit" value="search by dog breed" />
+</form>
+
+<a asp-action="Add" asp-controller="Home">Add new Pet</a>

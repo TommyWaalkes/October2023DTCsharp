@@ -1,0 +1,10 @@
+﻿@model List<Pet>
+<form>
+@foreach(Pet p in Model)
+{
+   @*  <img src="~/images/@p.Img"/> *@
+     @*    <img src="System.Web.Hosting.HostingEnvironment.MapPath(" ~ /Images/@p.Img")" /> *@
+    <p>Name: @p.Name Breed: @p.Breed <button asp-action="Adopt" asp-controller="Home" asp-route-id="@p.Id">Adopt @p.Name</button> </p>
+
+}
+</form>
