@@ -1,0 +1,10 @@
+﻿@model PeopleListing
+
+@for(int i = 1 + (@Model.page - 1)*9; i < Model.results.Length; i++)
+{
+    <a asp-action="Result" asp-controller="Home" asp-route-id="@i"><p>@Model.results[i].name</p></a>
+}
+
+@if(Model.page < 10){
+<a asp-action="PeopleList" asp-controller="Home" asp-route-page="@Model.page">Next Page @Model.page </a>
+}

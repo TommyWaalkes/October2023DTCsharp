@@ -25,10 +25,11 @@ namespace SWAPIExample.Controllers
             return View(p);
         }
 
-        public IActionResult PeopleList()
+        public IActionResult PeopleList(int page)
         {
-            List<SWPerson> people = SwapiDAL.GetPeople();
-            return View(people);
+            PeopleListing toplevel = SwapiDAL.GetPage(page);
+            toplevel.page++;
+            return View(toplevel);
         }
 
         public IActionResult Privacy()
