@@ -1,0 +1,6 @@
+﻿@model List<SWPerson>
+
+@for(int i = 1; i < Model.Count; i++)
+{
+    <a asp-action="Result" asp-controller="Home" asp-route-id="@i"><p>@Model[i].name</p></a>
+}
