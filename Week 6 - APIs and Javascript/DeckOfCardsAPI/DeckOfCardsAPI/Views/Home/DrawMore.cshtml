@@ -1,0 +1,12 @@
+﻿@model DeckDrawsViewModel
+@*     we need a deck id on top of the cards from the api, but those are stored in 2 different models, how do we proceed?
+    We will need to create a viewmodel - this a model that exist purely for a view, otfentimes used to make displaying easier
+    or to carry around multiple unrelated models all at once.
+*@
+
+@foreach (Card c in Model.Cards)
+{
+    <img src="@c.image" />
+}
+
+<a asp-action="DrawMore" asp-controller="Home" asp-route-deckId="@Model.DeckId">Draw 5 more cards</a>
