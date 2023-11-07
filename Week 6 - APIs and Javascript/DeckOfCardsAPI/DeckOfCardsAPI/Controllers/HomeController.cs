@@ -24,7 +24,7 @@ namespace DeckOfCardsAPI.Controllers
         }
 
         //This takes in a deck_id so we can draw again from the same deck
-        public IActionResult DrawMore(string deckId)
+        public IActionResult DrawMore(string deckId, Card card)
         {
             List<Card> cards = DeckOfCardsDAL.Draw(5, deckId);
             DeckDrawsViewModel dd = new DeckDrawsViewModel();
