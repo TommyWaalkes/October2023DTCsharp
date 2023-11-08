@@ -7,7 +7,7 @@
 @foreach(Card c in Model.Cards)
 {
     <img src="@c.image" />
-    <p>Keep:</p><input type="checkbox" name="Keep"/>
+    <input type="checkbox" name="Keep"/>
 }
 
 <a asp-action="DrawMore" asp-controller="Home" asp-route-deckId="@Model.Deck.deck_id" asp-route-card="@Model.Cards[0]">Draw 5 more cards</a>

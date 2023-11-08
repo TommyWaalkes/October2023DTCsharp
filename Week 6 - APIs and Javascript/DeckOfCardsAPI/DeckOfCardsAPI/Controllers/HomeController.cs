@@ -6,17 +6,13 @@ namespace DeckOfCardsAPI.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
+        public List<Card> KeptCards { get; set; } = new List<Card>();
         //This makes the initial and crafts a view model to have access to both the deck and cards 
         public IActionResult Index()
         {
             Deck deck = DeckOfCardsDAL.GetDeck();
             List<Card> cards = DeckOfCardsDAL.Draw(5, deck.deck_id);
+            KeptCards.AddRange(cards);
             DeckDrawsViewModel dd = new DeckDrawsViewModel();
             dd.Cards = cards;
             dd.Deck = deck;
@@ -27,6 +23,7 @@ namespace DeckOfCardsAPI.Controllers
         public IActionResult DrawMore(string deckId, Card card)
         {
             List<Card> cards = DeckOfCardsDAL.Draw(5, deckId);
+            KeptCards.AddRange(cards);
             DeckDrawsViewModel dd = new DeckDrawsViewModel();
             dd.DeckId = deckId;
             dd.Cards = cards; 
