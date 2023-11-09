@@ -1,0 +1,31 @@
+﻿@model List<Employee>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Age</th>
+        <th>Salary</th>
+    </tr>
+@foreach(Employee e in Model)
+{
+    <tr>
+        <td>@e.Id</td>
+        <td>@e.FirstName</td>
+        <td>@e.Age</td>
+        <td>@e.Salary</td>
+    </tr>
+}
+
+</table>
+
+<h2>Select an Employee to look up their retirement info</h2>
+
+<form asp-action="RetirementInfo" asp-controller="Home">
+    <select name="id">
+        @foreach(Employee e in Model){
+        <option value="@e.Id">@e.FirstName</option>
+        }
+    </select>
+    <input type="submit"/>
+</form>
