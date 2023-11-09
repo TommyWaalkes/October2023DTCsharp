@@ -3,7 +3,15 @@
         <!-- If you need JS as the page loads, import it here -->
     </head>
     <body>
+        <p>Height: <input type="number" min=0 id="Height"/></p>
+        <p>Width: <input type="number" min=0 id="Width"/></p>
+        <p>Length: <input type="number" min=0 id="Length"/></p>
 
+        <button onclick="CalcRoom()">Find Measurements</button>
+
+        <p id="Area">Area: </p>
+        <p id="Volume">Volume: </p>
+        <p id="Perimeter">Perimeter:</p>
 
         <!-- In general it's best practice to import Javascript file at the 
         bottom of the HTML body. 
