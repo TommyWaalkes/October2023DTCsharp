@@ -1,0 +1,13 @@
+.text{
+    font-weight: bold;
+    font-size: 20px;
+    color: brown;
+}
+
+img{
+    border: 2px solid grey;
+}
+
+body{
+    background-color: black;
+}
