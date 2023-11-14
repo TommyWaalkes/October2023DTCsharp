@@ -6,3 +6,15 @@
 <p>Name: {{stu.name}}</p>
 <p>Home Town: {{stu.hometown}}</p>
 <p>Favorite Food: {{stu.favoriteFood}}</p>
+
+
+<p>--------------------------------------------------</p>
+
+
+<h2>Select a Student to learn about</h2>
+
+<button *ngFor="let s of students; index as i" (click)="selectStudent(i)"> {{s.name}}</button>
+
+<p>Name: {{selectedStudent.name}}</p>
+<p>Home Town: {{selectedStudent.hometown}}</p>
+<p>Favorite Food: {{selectedStudent.favoriteFood}}</p>

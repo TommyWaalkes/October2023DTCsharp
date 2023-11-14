@@ -17,4 +17,16 @@ export class AppComponent {
   //Any variable in the component class are accesible in the html view 
   names:string[] =["Jimmy", "Timmy", "Kimmy"];
   stu:Student = {name:"Jake", favoriteFood:"Hamburgers", hometown:"Detroit"}
+  students:Student[] = [
+    {name:"Gary", favoriteFood:"Porridge", hometown:"Boston, MA"},
+    {name:"Sandra", favoriteFood:"Chicken Nuggets", hometown:"Houston, Texas"},
+    {name:"Frank", favoriteFood:"Mac N Cheese", hometown:"Portland, Oregon"}
+  ]
+  //This casts an empty object to be our selected student
+  selectedStudent: Student = {} as Student;
+
+  selectStudent(index:number){
+    this.selectedStudent = this.students[index];
+    console.log(this.selectedStudent);
+  }
 }
