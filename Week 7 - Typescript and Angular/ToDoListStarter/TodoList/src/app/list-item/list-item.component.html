@@ -1,0 +1,6 @@
+<span *ngIf="!listItem.completed; else completedDisplay"><button (click)="CompleteItem()">Complete</button>{{listItem.name}}</span>
+
+<!-- Theres tons you can do with this tag, but for us we'll be using it for our else blocks -->
+<ng-template #completedDisplay>
+    <span style="text-decoration: line-through;">{{listItem.name}}</span>
+</ng-template>
