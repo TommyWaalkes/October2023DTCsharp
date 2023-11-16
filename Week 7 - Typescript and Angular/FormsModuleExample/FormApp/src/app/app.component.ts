@@ -23,4 +23,13 @@ export class AppComponent {
                       };
     this.logins.push(newLog);
   }
+
+  AddLoginFromChild(newLogin:Login){
+    let newLog:Login = {userName:newLogin.userName, 
+      email:newLogin.email, 
+      password:newLogin.password, 
+      age:newLogin.age
+    };
+    this.logins.push(newLog);
+  }
 }
