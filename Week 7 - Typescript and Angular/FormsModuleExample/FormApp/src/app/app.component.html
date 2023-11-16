@@ -1,0 +1,31 @@
+<p>Welcome {{name}}</p>
+
+<form>
+  <p>Name</p>
+  <input type="text" name="name" [(ngModel)]="name" />
+</form>
+
+
+<p>Make a new Login</p>
+<div *ngFor="let l of logins" style="border: 2px solid black; margin-bottom: 20px;">
+  <p>User Name: {{l.userName}}</p>
+  <p>Email: {{l.email}}</p>
+  <p>Password: {{l.password}}</p>
+  <p>Age: {{l.age}}</p>
+</div>
+
+<form (ngSubmit)="AddNewLogin()">
+  <p>User Name</p>
+  <input type="text"  [(ngModel)]="login.userName"/>
+
+  <p>Email</p>
+  <input type="text" name="email" [(ngModel)]="login.email"/>
+
+  <p>Password</p>
+  <input type="password" name="password" [(ngModel)]="login.password"/>
+
+  <p>Age</p>
+  <input type="number" name="age" [(ngModel)]="login.age"/>
+
+  <input type="submit" value="Make a New Login"/>
+</form>
