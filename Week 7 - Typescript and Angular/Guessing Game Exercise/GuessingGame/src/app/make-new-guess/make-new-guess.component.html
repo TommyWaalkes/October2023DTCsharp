@@ -1,0 +1,7 @@
+<h2>Make a new Guess</h2>
+
+<form (ngSubmit)="EmitWord()">
+    <p>Guess</p>
+    <input type="text" name="guessWord" [(ngModel)]="word"/>
+    <input type="submit" value="Make a new Guess"/>
+</form>

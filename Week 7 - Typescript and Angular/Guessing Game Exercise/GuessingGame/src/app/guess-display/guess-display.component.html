@@ -1,0 +1,5 @@
+
+<span *ngIf="g.isMatch; else notMatch" style="color:green">{{g.guessWord}} Correct Letters: {{g.sharedLetters}}</span>
+<ng-template #notMatch>
+    <span style="color:red">{{g.guessWord}} Correct Letters: {{g.sharedLetters}}</span>
+</ng-template>
