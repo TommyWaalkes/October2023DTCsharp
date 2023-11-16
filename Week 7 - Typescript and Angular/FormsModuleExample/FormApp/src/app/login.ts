@@ -3,4 +3,5 @@ export interface Login {
     email:string; 
     age:number; 
     password:string;
+    isEditing: boolean;
 }

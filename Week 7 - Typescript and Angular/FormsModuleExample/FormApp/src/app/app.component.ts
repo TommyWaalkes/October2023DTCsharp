@@ -19,7 +19,8 @@ export class AppComponent {
     let newLog:Login = {userName:this.login.userName, 
                         email:this.login.email, 
                         password:this.login.password, 
-                        age:this.login.age
+                        age:this.login.age,
+                        isEditing:false
                       };
     this.logins.push(newLog);
   }
@@ -28,8 +29,23 @@ export class AppComponent {
     let newLog:Login = {userName:newLogin.userName, 
       email:newLogin.email, 
       password:newLogin.password, 
-      age:newLogin.age
+      age:newLogin.age,
+      isEditing:false
     };
     this.logins.push(newLog);
+  }
+
+  ToggleEditing(index:number){
+    this.logins[index].isEditing = !this.logins[index].isEditing;
+  }
+
+  DoneEditing(index:number, newValues:Login){
+    newValues.isEditing = false;
+    this.logins[index] = newValues; 
+  }
+
+  DeleteItem(index:number){
+    //Splice takes in 2 params: first the index we start at, how many items do we want to delete
+    this.logins.splice(index, 1);
   }
 }

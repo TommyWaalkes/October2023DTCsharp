@@ -7,13 +7,20 @@
 
 
 <p>Make a new Login</p>
-<div *ngFor="let l of logins" style="border: 2px solid black; margin-bottom: 20px;">
-  <p>User Name: {{l.userName}}</p>
-  <p>Email: {{l.email}}</p>
-  <p>Password: {{l.password}}</p>
-  <p>Age: {{l.age}}</p>
+<div *ngFor="let log of logins; index as i" >
+  <div *ngIf="log.isEditing === false; else displayEdit">  
+    <app-login-details [l]="log"></app-login-details>
+    <button (click)="DeleteItem(i)">Delete {{log.userName}}</button>
+    <button (click)="ToggleEditing(i)">Edit {{log.userName}}</button>
+  </div>
+  <ng-template #displayEdit>
+    <div>
+      <app-edit-login [editLog]="log" (doneEditingEvent)="DoneEditing(i, $event)"></app-edit-login>
+    </div>
+  </ng-template>
 </div>
 
+<h2>Add new Login</h2>
 <app-add-login-form (newLoginEvent)="AddLoginFromChild($event)">
 
 </app-add-login-form>
