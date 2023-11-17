@@ -1,0 +1,6 @@
+<h2>Add New Task</h2>
+<form (ngSubmit)="AddNew()">
+    <p>Task Name</p>
+    <input type="text" name="name" [(ngModel)]="newTodo.name" />
+    <input type="submit" value="Add new Task"/>
+</form>

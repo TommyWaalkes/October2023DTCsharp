@@ -1,7 +1,8 @@
 <h2>Tommy's To Do List</h2>
 
 <ul>
-  <li *ngFor="let t of todoList">
-    <app-list-item [listItem]="t"></app-list-item>
+  <li *ngFor="let t of todoList; index as i">
+    <app-list-item [listItem]="t"></app-list-item><button (click)="DeleteTodo(i)">X</button>
   </li>
 </ul>
+<app-add-new-todo (newTodoEvent)="AddNewTask($event)"></app-add-new-todo>

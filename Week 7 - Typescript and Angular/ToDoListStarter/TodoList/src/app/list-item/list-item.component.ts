@@ -10,6 +10,17 @@ export class ListItemComponent {
   
   @Input()
   listItem:Todo = {} as Todo;
+  isEditing: boolean = false; 
+
+  toggleEditing(){
+    this.isEditing = !this.isEditing;
+
+  }
+
+  UpdateTodo(item:Todo){
+    this.listItem = item;
+    this.toggleEditing();
+  }
 
   CompleteItem(){
     this.listItem.completed = true;

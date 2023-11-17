@@ -1,6 +1,17 @@
-<span *ngIf="!listItem.completed; else completedDisplay"><button (click)="CompleteItem()">Complete</button>{{listItem.name}}</span>
+<div *ngIf="!isEditing; else showEdit">
 
-<!-- Theres tons you can do with this tag, but for us we'll be using it for our else blocks -->
-<ng-template #completedDisplay>
-    <span style="text-decoration: line-through;">{{listItem.name}}</span>
+    <span *ngIf="!listItem.completed; else completedDisplay">
+        <button (click)="CompleteItem()">Complete</button>
+        {{listItem.name}} </span>
+
+    <!-- Theres tons you can do with this tag, but for us we'll be using it for our else blocks -->
+    <ng-template #completedDisplay>
+        <span style="text-decoration: line-through;">{{listItem.name}}</span>
+    </ng-template>
+
+    <button (click)="toggleEditing()">Edit This Task</button>
+</div>
+
+<ng-template #showEdit>
+    <app-edit-todo [editTask]="listItem" (editEvent)="UpdateTodo($event)"></app-edit-todo>
 </ng-template>

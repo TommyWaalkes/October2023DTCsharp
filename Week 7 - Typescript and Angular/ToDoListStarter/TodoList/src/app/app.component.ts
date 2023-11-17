@@ -15,5 +15,12 @@ export class AppComponent {
     {name:"Cheat on our taxes", completed:true}
   ];
 
-  
+  AddNewTask(t:Todo){
+    let todo: Todo = {name:t.name, completed:false};
+    this.todoList.push(todo);
+  }
+
+  DeleteTodo(index:number){
+    this.todoList.splice(index,1);
+  }
 }
