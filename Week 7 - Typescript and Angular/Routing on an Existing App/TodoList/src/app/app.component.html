@@ -1,0 +1,11 @@
+<!-- With this setup, you would need a database since information 
+is not remember between angular componets without input/output, a servoce, 
+or local file like a Txt, csv or cookie. 
+-->
+<h2>To do list app</h2>
+<a [routerLink]="['Main']">Home</a>
+<a [routerLink]="['Item']">Item</a>
+<a [routerLink]="['Edit']">Edit</a>
+<a [routerLink]="['AddNew']">Add New Todo</a>
+
+<router-outlet></router-outlet>

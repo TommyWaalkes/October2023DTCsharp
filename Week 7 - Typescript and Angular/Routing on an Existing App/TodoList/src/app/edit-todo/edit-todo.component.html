@@ -1,0 +1,6 @@
+<h2>Edit Task</h2>
+<form (ngSubmit)="UpdateTask()">
+    <p>Task Name</p>
+    <input type="text" name="name" [(ngModel)]="editTask.name" />
+    <input type="submit" value="Done Editing"/>
+</form>
