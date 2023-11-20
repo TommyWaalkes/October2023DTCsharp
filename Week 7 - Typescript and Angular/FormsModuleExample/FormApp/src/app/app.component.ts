@@ -11,7 +11,11 @@ export class AppComponent {
   name:string = "";
   logins:Login[] = [];
   login:Login = {} as Login;
-
+  num:number = this.getRndInteger(1,10);
+  getRndInteger(min:number, max:number):number {
+    return Math.floor(Math.random() * (max - min) ) + min;
+  }
+  
   AddNewLogin(){
     //Without making a new variable, this will point every entry 
     //in the array to the same spot in memory. Changes made on the form 

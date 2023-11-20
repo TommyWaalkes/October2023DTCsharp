@@ -1,0 +1,13 @@
+<form (ngSubmit)="getSquareArea()">
+  <p>Length of Side</p>
+  <input type="number" name="len" [(ngModel)]="len"/>
+  <input type="submit" value="Find My Area"/>
+  <!-- In the summer there are hot shingles in your area -->
+</form>
+
+<p *ngIf="area !== 0">Area: {{area}}</p>
+<!-- 
+<div style="{'width':getLen();'height':getLen() 'background-color':red}";>
+</div> -->
+
+<div id="Square" style="background-color: red;"></div>

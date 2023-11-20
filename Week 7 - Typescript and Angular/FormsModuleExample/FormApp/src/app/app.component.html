@@ -1,5 +1,6 @@
 <p>Welcome {{name}}</p>
-
+<p>{{num}}</p>
+<button (click)="num = getRndInteger(1,10)">Get new Random num</button>
 <form>
   <p>Name</p>
   <input type="text" name="name" [(ngModel)]="name" />

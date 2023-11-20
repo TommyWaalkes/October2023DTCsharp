@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { MenuItem } from '../MenuItem';
 
 @Component({
@@ -6,9 +6,9 @@ import { MenuItem } from '../MenuItem';
   templateUrl: './display-category.component.html',
   styleUrls: ['./display-category.component.css']
 })
-export class DisplayCategoryComponent {
+export class DisplayCategoryComponent implements OnInit {
   @Input()
-  inputCategory:string = "Dinner";
+  inputCategory:string = "";
   menuItems:MenuItem[] = [
     {name:"Garlic Bread", category:"Appetizer", price:10.99}, 
     {name:"Cheese Pizza", category:"Dinner", price:11.99},
@@ -19,6 +19,11 @@ export class DisplayCategoryComponent {
   displayItems:MenuItem[] = [];
 
   constructor(){
+    //The input has not yet made it into our child component here
+    
+  }
+  
+  ngOnInit(): void {
     this.getByCategory(); 
   }
 

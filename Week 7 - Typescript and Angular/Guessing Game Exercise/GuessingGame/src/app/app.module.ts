@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { GuessDisplayComponent } from './guess-display/guess-display.component';
