@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MovieAPIService } from '../movie-api.service';
 import { MovieDetails } from '../movie-details';
+import { OurMovieAPIService } from '../our-movie-api.service';
 
 @Component({
   selector: 'app-movie-details',
@@ -13,7 +14,9 @@ export class MovieDetailsComponent implements OnInit {
   movieId: string | null  = "";
   movie: MovieDetails = {} as MovieDetails;
   //You can inject as many services as you need on a component
-  constructor(private routing: ActivatedRoute, private movieApi : MovieAPIService){
+  constructor(private routing: ActivatedRoute, 
+    private movieApi : MovieAPIService,
+    private crudAPI: OurMovieAPIService){
     
   }
   ngOnInit(): void {
@@ -28,5 +31,11 @@ export class MovieDetailsComponent implements OnInit {
         }
       )
     }
+  }
+
+  favoriteMovie(){
+    //Even if you don't react to something being favorited 
+    //You still need the subscribe
+    this.crudAPI.favoriteMovie(this.movie).subscribe();
   }
 }
