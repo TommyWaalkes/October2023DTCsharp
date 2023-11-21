@@ -1,13 +1,43 @@
-<form (ngSubmit)="getSquareArea()">
-  <p>Length of Side</p>
-  <input type="number" name="len" [(ngModel)]="len"/>
-  <input type="submit" value="Find My Area"/>
-  <!-- In the summer there are hot shingles in your area -->
-</form>
-
+<select name="selected" [(ngModel)]="selected">
+  <option *ngFor="let s of shapes" [value]="s">{{s}}</option>
+</select>
 <p *ngIf="area !== 0">Area: {{area}}</p>
-<!-- 
-<div style="{'width':getLen();'height':getLen() 'background-color':red}";>
-</div> -->
+<div *ngIf="selected === 'square'">
+  <form (ngSubmit)="getSquareArea()">
+    <p>Length of Side</p>
+    <input type="number" name="len" [(ngModel)]="len"/>
+    <input type="submit" value="Find My Area"/>
+    <!-- In the summer there are hot shingles in your area -->
+  </form>
 
-<div id="Square" style="background-color: red;"></div>
+
+
+
+  <div [style.width.px]="len * 5" [style.height.px] = "len * 5" style="background-color: red;"></div>
+</div>
+
+<div *ngIf="selected === 'rectangle'">
+  <form (ngSubmit)="getRectangleArea()">
+    <p>Length</p>
+    <input type="number" name="len" [(ngModel)]="len"/>
+    <p>Width</p>
+    <input type="number" name="width" [(ngModel)]="wid"/>
+    <input type="submit" value="Find My Area"/>
+  </form>
+  <div [style.width.px]="len * 5" [style.height.px] = "wid * 5" style="background-color: red;"></div>
+
+</div>
+
+
+<div *ngIf="selected === 'triangle'">
+  <form (ngSubmit)="getTriangleArea()">
+    <p>Height</p>
+    <input type="number" name="len" [(ngModel)]="len"/>
+    <p>Base</p>
+    <input type="number" name="width" [(ngModel)]="wid"/>
+    <input type="submit" value="Find My Area"/>
+  </form>
+  <div [style]="getTriangle()">
+    
+  </div>
+</div>
