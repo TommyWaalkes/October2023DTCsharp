@@ -1,0 +1,11 @@
+<button (click)="toggleShow()">Show new Post Form</button>
+
+<form *ngIf="show" (ngSubmit)="makeNewPost()">
+    <p>Post Title</p>
+    <input type="text" name="title" [(ngModel)]="newPost.title"/>
+
+    <p>Thought</p>
+    <input type="text" name="thought" [(ngModel)]="newPost.thought"/>
+
+    <input type="submit" value="Post"/>
+</form>

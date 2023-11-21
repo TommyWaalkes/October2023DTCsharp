@@ -1,0 +1,2 @@
+<app-singe-post *ngFor="let p of posts" [post]="p"></app-singe-post>
+<app-post-form (newPostEvent)="AddPost($event)"></app-post-form>
