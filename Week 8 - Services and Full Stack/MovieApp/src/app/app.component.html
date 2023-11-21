@@ -1,9 +1,1 @@
-<form (ngSubmit)="searchByTitle()">
-  <p>Please input the movie you wish to search for</p>
-  <input type="text" name="title" [(ngModel)]="title"/>
-  <input type="submit" value="Search for movie"/>
-</form>
-
-
-<app-movie-result *ngFor="let r of result.Search" [result]="r">
-</app-movie-result>
+<router-outlet></router-outlet>

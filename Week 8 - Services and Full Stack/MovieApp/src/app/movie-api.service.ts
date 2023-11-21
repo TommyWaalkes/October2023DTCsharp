@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { SearchResults } from './search-results';
+import { MovieDetails } from './movie-details';
 
 @Injectable({
   providedIn: 'root'
@@ -27,5 +28,9 @@ constructor(private http:HttpClient) { }
     //We create a listener in the component that waits for the response to come back from the API, error or no
     //The method we'll use is called subscribe()
     return this.http.get<SearchResults>(this.baseUrl+"s="+title);
+  }
+
+  getMovieDetailsById(id:string) : Observable<MovieDetails>{
+    return this.http.get<MovieDetails>(this.baseUrl+"i="+id);
   }
 }
