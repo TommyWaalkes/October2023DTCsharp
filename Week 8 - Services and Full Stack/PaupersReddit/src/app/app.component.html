@@ -1,0 +1,8 @@
+<form (ngSubmit)="SearchSub()">
+  <p>Please input a sub Reddit to display</p>
+  <input type="text" name="sub" [(ngModel)]="sub"/>
+  <input type="submit"/>
+</form>
+<div *ngIf="welcome.data.children.length > 0 && loading === false" >
+  <app-post *ngFor="let c of welcome.data.children" [post]="c"></app-post>
+</div>

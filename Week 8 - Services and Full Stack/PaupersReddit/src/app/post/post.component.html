@@ -1,0 +1,8 @@
+<a href="{{post.data.permalink}}">
+    <h2>{{post.data.title}}</h2>
+    <!-- JS is what's called a truthy language, it resolves non boolean data types 
+    to bools, strings by themselves are false if null or empty, 
+        numbers are false if null or 0, all other values are true -->
+    <img *ngIf="post.data.thumbnail.includes('thumbs')" 
+    width="140px" height="140px" src="{{post.data.thumbnail}}"/>
+</a>
