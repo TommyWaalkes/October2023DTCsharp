@@ -18,16 +18,21 @@ export class AppComponent {
   ];
 
   selected:string = this.shapes[0];
+ 
+  //This pops a service object into existance for the rest of this component to use 
+  //This is where the depency injection is happening in Angular
+  constructor(private areaService:AreaService){
 
+  }
   getSquareArea(){
-    this.area = this.len * this.len;
+    this.area = this.areaService.getSquare(this.len);
   }
   getRectangleArea(){
-    this.area = this.len * this.wid;
+    this.area = this.areaService.getRectangle(this.len, this.wid);
   }
 
   getTriangleArea(){
-    this.area = this.len * this.wid / 2;
+    this.area = this.areaService.getTriangle(this.len, this.wid);
   }
 
   getTriangle(){
@@ -40,10 +45,6 @@ export class AppComponent {
   }
 
 
-  //This pops a service object into existance for the rest of this component to use 
-  //This is where the depency injection is happening in Angular
-  constructor(private areaService:AreaService){
 
-  }
 
 }

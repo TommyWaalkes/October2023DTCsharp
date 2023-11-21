@@ -9,10 +9,6 @@
     <input type="submit" value="Find My Area"/>
     <!-- In the summer there are hot shingles in your area -->
   </form>
-
-
-
-
   <div [style.width.px]="len * 5" [style.height.px] = "len * 5" style="background-color: red;"></div>
 </div>
 
@@ -32,11 +28,13 @@
 <div *ngIf="selected === 'triangle'">
   <form (ngSubmit)="getTriangleArea()">
     <p>Height</p>
-    <input type="number" name="len" [(ngModel)]="len"/>
+    <input type="number" name="wid" [(ngModel)]="wid"/>
     <p>Base</p>
-    <input type="number" name="width" [(ngModel)]="wid"/>
+    <input type="number" name="len" [(ngModel)]="len"/>
     <input type="submit" value="Find My Area"/>
   </form>
+  <!-- Style may take in an object containing CSS styles. if a style would normally have a dash, angular wants you 
+  to camel case it. Compound styles like the border will take in strings -->
   <div [style]="getTriangle()">
     
   </div>
