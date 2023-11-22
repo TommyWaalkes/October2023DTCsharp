@@ -1,9 +1,9 @@
 <form (ngSubmit)="updateMovie()">
     <p>Title</p>
-    <input type="text" name="title" [(ngModel)]="editMovie.Title"/>
+    <input type="text" name="title" [(ngModel)]="editMovie.title"/>
     <p>Actors - this is a comma separated list</p>
-    <input type="text" name="Actors" [(ngModel)]="editMovie.Actors"/>
+    <input type="text" name="Actors" [(ngModel)]="editMovie.actors"/>
     <p>Director</p>
-    <input type="text" name="Director" [(ngModel)]="editMovie.Director"/>
-    <input type="submit" value="Update {{editMovie.Title}}"/>
+    <input type="text" name="Director" [(ngModel)]="editMovie.director"/>
+    <input type="submit" value="Update {{editMovie.title}}"/>
 </form>

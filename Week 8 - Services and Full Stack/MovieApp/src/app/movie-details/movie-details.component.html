@@ -1,20 +1,20 @@
 
-<h2>{{movie.Title}}</h2>
-<img src="{{movie.Poster}}"/>
-<h3>Director: {{movie.Director}}</h3>
+<h2>{{movie.title}}</h2>
+<img src="{{movie.poster}}"/>
+<h3>Director: {{movie.director}}</h3>
 
-<div *ngIf="movie.Actors !== undefined && movie.Actors.length > 0">
+<div *ngIf="movie.actors !== undefined && movie.actors.length > 0">
     <h3>Actors</h3>
     <ul>
-        <li *ngFor="let a of movie.Actors.split(',')"> {{a}}</li>
+        <li *ngFor="let a of movie.actors.split(',')"> {{a}}</li>
     </ul>
 </div>
 
-<p>Description; {{movie.Plot}}</p>
+<p>Description; {{movie.plot}}</p>
 <a *ngIf="favorited" [routerLink]="['/Edit',movie.id]">Edit Favorite - this edits what's in the database, this view however displays what's coming from the api</a>
 
-<button *ngIf="!favorited; else deleteButton" (click)="favoriteMovie()">Favorite {{movie.Title}}</button>
+<button *ngIf="!favorited; else deleteButton" (click)="favoriteMovie()">Favorite {{movie.title}}</button>
 
 <ng-template #deleteButton>
-    <button (click)="deleteFavorite()">Delete {{movie.Title}} from favorites</button>
+    <button (click)="deleteFavorite()">Delete {{movie.title}} from favorites</button>
 </ng-template>

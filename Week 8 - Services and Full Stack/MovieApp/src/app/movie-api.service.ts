@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { SearchResults } from './search-results';
-import { MovieDetails } from './movie-details';
+import { MovieDetailsDB } from './movie-details';
 
 @Injectable({
   providedIn: 'root'
@@ -30,7 +30,7 @@ constructor(private http:HttpClient) { }
     return this.http.get<SearchResults>(this.baseUrl+"s="+title);
   }
 
-  getMovieDetailsById(id:string) : Observable<MovieDetails>{
-    return this.http.get<MovieDetails>(this.baseUrl+"i="+id);
+  getMovieDetailsById(id:string) : Observable<MovieDetailsDB>{
+    return this.http.get<MovieDetailsDB>(this.baseUrl+"i="+id);
   }
 }

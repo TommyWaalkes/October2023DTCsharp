@@ -8,11 +8,13 @@ import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { RouterModule, Routes } from '@angular/router';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { EditMovieComponent } from './edit-movie/edit-movie.component';
+import { FavoritesListComponent } from './favorites-list/favorites-list.component';
 
 const routes:Routes = [
   {path:'Results', component:MovieListComponent}, 
   {path:'Details/:omdbId', component:MovieDetailsComponent},
   {path:'Edit/:id', component:EditMovieComponent},
+  {path: 'Favorites', component:FavoritesListComponent},
   {path:'', pathMatch:"full", redirectTo:"Results"},
 ]
 
@@ -22,7 +24,8 @@ const routes:Routes = [
     MovieResultComponent,
     MovieDetailsComponent,
     MovieListComponent,
-    EditMovieComponent
+    EditMovieComponent,
+    FavoritesListComponent
   ],
   imports: [
     BrowserModule,

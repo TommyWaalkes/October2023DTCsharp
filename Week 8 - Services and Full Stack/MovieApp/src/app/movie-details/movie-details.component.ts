@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MovieAPIService } from '../movie-api.service';
-import { MovieDetails } from '../movie-details';
+import { MovieDetailsDB } from '../movie-details';
 import { OurMovieAPIService } from '../our-movie-api.service';
 
 @Component({
@@ -12,8 +12,8 @@ import { OurMovieAPIService } from '../our-movie-api.service';
 export class MovieDetailsComponent implements OnInit {
 
   movieId: string | null  = "";
-  movie: MovieDetails = {} as MovieDetails;
-  favorites: MovieDetails[] = [];
+  movie: MovieDetailsDB = {} as MovieDetailsDB;
+  favorites: MovieDetailsDB[] = [];
   favorited: boolean = false;
   //You can inject as many services as you need on a component
   constructor(private routing: ActivatedRoute, 
@@ -44,13 +44,13 @@ export class MovieDetailsComponent implements OnInit {
   }
 
   isFavorite(){
-    this.crudAPI.checkFavorite(this.movie.Title).subscribe(
+    this.crudAPI.checkFavorite(this.movie.title).subscribe(
       (result) =>{
         console.log(result);
         this.favorited = result;
         //if a movie is favorited it should have an Id
         for(let i = 0; i < this.favorites.length; i++){
-          let f:MovieDetails = this.favorites[i];
+          let f:MovieDetailsDB = this.favorites[i];
           if(f.imdbID === this.movie.imdbID){
             console.log(f.id);
             this.movie.id = f.id;
