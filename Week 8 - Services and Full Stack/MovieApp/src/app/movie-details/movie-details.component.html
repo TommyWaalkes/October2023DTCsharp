@@ -3,11 +3,17 @@
 <img src="{{movie.Poster}}"/>
 <h3>Director: {{movie.Director}}</h3>
 
-<h3>Actors</h3>
-<ul>
-    <li *ngFor="let a of movie.Actors.split(',')"> {{a}}</li>
-</ul>
+<div *ngIf="movie.Actors !== undefined && movie.Actors.length > 0">
+    <h3>Actors</h3>
+    <ul>
+        <li *ngFor="let a of movie.Actors.split(',')"> {{a}}</li>
+    </ul>
+</div>
 
 <p>Description; {{movie.Plot}}</p>
 
-<button (click)="favoriteMovie()">Favorite {{movie.Title}}</button>
+<button *ngIf="!favorited; else deleteButton" (click)="favoriteMovie()">Favorite {{movie.Title}}</button>
+
+<ng-template #deleteButton>
+    <button (click)="deleteFavorite()">Delete {{movie.Title}} from favorites</button>
+</ng-template>

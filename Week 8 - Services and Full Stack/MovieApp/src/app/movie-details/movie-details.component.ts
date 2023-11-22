@@ -13,6 +13,8 @@ export class MovieDetailsComponent implements OnInit {
 
   movieId: string | null  = "";
   movie: MovieDetails = {} as MovieDetails;
+  favorites: MovieDetails[] = [];
+  favorited: boolean = false;
   //You can inject as many services as you need on a component
   constructor(private routing: ActivatedRoute, 
     private movieApi : MovieAPIService,
@@ -20,6 +22,11 @@ export class MovieDetailsComponent implements OnInit {
     
   }
   ngOnInit(): void {
+    this.crudAPI.getAllMovieDetails().subscribe(
+      (result) => {
+        this.favorites = result; 
+      }
+    );
     this.movieId = this.routing.snapshot.paramMap.get("omdbId");
     console.log(this.movieId);
     if(this.movieId !== null){
@@ -28,14 +35,39 @@ export class MovieDetailsComponent implements OnInit {
       .subscribe(
         (result) =>{
           this.movie = result; 
+          console.log(this.movie);
+          this.isFavorite();
         }
       )
     }
   }
 
+  isFavorite(){
+    this.crudAPI.checkFavorite(this.movie.Title).subscribe(
+      (result) =>{
+        console.log(result);
+        this.favorited = result;
+      }
+    );
+  }
+
   favoriteMovie(){
     //Even if you don't react to something being favorited 
     //You still need the subscribe
-    this.crudAPI.favoriteMovie(this.movie).subscribe();
+    this.crudAPI.favoriteMovie(this.movie).subscribe(
+      (result)=>{
+        this.favorited = true;
+      }
+    );
+  }
+
+  deleteFavorite(){
+    
+    //For this work properly we still need subscribe. 
+    this.crudAPI.deleteMovie(this.movie.Id).subscribe(
+      ()=>{
+        this.favorited = false; 
+      }
+    );
   }
 }

@@ -115,6 +115,14 @@ namespace IntroFullStackAPI.Controllers
             return NoContent();
         }
 
+        [HttpGet("isFavorite/{title}")]
+        public bool CheckFavorite(string title)
+        {
+            List<MovieDetails> details = _context.MovieDetails.ToList();
+            int matches = details.Count(d =>  d.Title == title);
+            return matches > 0;
+        }
+
         private bool MovieDetailsExists(int id)
         {
             return (_context.MovieDetails?.Any(e => e.Id == id)).GetValueOrDefault();

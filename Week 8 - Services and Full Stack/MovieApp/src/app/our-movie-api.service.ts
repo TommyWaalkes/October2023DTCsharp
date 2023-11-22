@@ -19,5 +19,15 @@ export class OurMovieAPIService {
     return this.http.post<MovieDetails>(this.baseUrl, fave);
   }
 
+  checkFavorite(title:string) :Observable<boolean>{
+    return this.http.get<boolean>(this.baseUrl+"/isFavorite/"+title);
+  }
+
+  //Deleting is generally by SQL id. It will match and delete the row
+  //You still need to subscribe to this though it is void
+  //No data will be returned, the result var will not have anything in it
+  deleteMovie(id:number ):Observable<void>{
+    return this.http.delete<void>(this.baseUrl+"/"+id);
+  }
 
 }
