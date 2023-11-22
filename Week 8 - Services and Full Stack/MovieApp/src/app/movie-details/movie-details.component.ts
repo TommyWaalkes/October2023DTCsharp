@@ -25,6 +25,7 @@ export class MovieDetailsComponent implements OnInit {
     this.crudAPI.getAllMovieDetails().subscribe(
       (result) => {
         this.favorites = result; 
+        console.log(this.favorites);
       }
     );
     this.movieId = this.routing.snapshot.paramMap.get("omdbId");
@@ -47,6 +48,14 @@ export class MovieDetailsComponent implements OnInit {
       (result) =>{
         console.log(result);
         this.favorited = result;
+        //if a movie is favorited it should have an Id
+        for(let i = 0; i < this.favorites.length; i++){
+          let f:MovieDetails = this.favorites[i];
+          if(f.imdbID === this.movie.imdbID){
+            console.log(f.id);
+            this.movie.id = f.id;
+          }
+        }
       }
     );
   }
@@ -64,7 +73,7 @@ export class MovieDetailsComponent implements OnInit {
   deleteFavorite(){
     
     //For this work properly we still need subscribe. 
-    this.crudAPI.deleteMovie(this.movie.Id).subscribe(
+    this.crudAPI.deleteMovie(this.movie.id).subscribe(
       ()=>{
         this.favorited = false; 
       }

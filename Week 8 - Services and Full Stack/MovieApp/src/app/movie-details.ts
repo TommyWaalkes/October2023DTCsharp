@@ -1,5 +1,5 @@
 export interface MovieDetails {
-    Id:         number;
+    id:         number;
     Title:      string;
     Year:       string;
     Rated:      string;

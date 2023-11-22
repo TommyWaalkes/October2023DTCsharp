@@ -30,4 +30,12 @@ export class OurMovieAPIService {
     return this.http.delete<void>(this.baseUrl+"/"+id);
   }
 
+  getMovie(id:number):Observable<MovieDetails>{
+    return this.http.get<MovieDetails>(this.baseUrl + "/"+id);
+  }
+
+  updateMovie(id:number, newValues:MovieDetails):Observable<void>{
+    return this.http.put<void>(this.baseUrl +"/"+id, newValues);
+  }
+
 }

@@ -11,6 +11,7 @@
 </div>
 
 <p>Description; {{movie.Plot}}</p>
+<a *ngIf="favorited" [routerLink]="['/Edit',movie.id]">Edit Favorite - this edits what's in the database, this view however displays what's coming from the api</a>
 
 <button *ngIf="!favorited; else deleteButton" (click)="favoriteMovie()">Favorite {{movie.Title}}</button>
 
