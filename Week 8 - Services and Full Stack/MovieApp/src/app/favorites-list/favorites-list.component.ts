@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OurMovieAPIService } from '../our-movie-api.service';
-import { MovieDetailsDB } from '../movie-details';
+import { MovieDetails } from '../movie-details';
 
 @Component({
   selector: 'app-favorites-list',
@@ -8,7 +8,7 @@ import { MovieDetailsDB } from '../movie-details';
   styleUrls: ['./favorites-list.component.css']
 })
 export class FavoritesListComponent implements OnInit {
-  favorites:MovieDetailsDB[] = [];
+  favorites:MovieDetails[] = [];
   constructor(private movieCrud:OurMovieAPIService){
 
   }

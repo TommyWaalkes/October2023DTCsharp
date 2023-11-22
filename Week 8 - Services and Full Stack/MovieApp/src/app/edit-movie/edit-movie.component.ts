@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MovieDetailsDB } from '../movie-details';
+import { MovieDetails } from '../movie-details';
 import { OurMovieAPIService } from '../our-movie-api.service';
 import { ActivatedRoute } from '@angular/router';
 
@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class EditMovieComponent implements OnInit {
   id:number = 0;
-  editMovie: MovieDetailsDB = {} as MovieDetailsDB;
+  editMovie: MovieDetails = {} as MovieDetails;
 
   constructor(private movieCrud: OurMovieAPIService, 
     private routing:ActivatedRoute){

@@ -1,5 +1,5 @@
 <div style="margin: 10px; border: 2px solid black;" *ngFor="let m of favorites">
-    <p>{{m.title}}</p>
-    <p>Plot: {{m.plot}}</p>
+    <p>{{m.Title}}</p>
+    <p>Plot: {{m.Plot}}</p>
     <a [routerLink]="['/Details',m.imdbID]">Learn More</a>
 </div>
