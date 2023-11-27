@@ -1,0 +1,18 @@
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Restaurant</th>
+        <th>Description</th>
+        <th>Rating</th>
+        <th>Order Again?</th>
+    </tr>
+    <tr *ngFor="let o of orders">
+        <td>{{o.Id}}</td>
+        <td>{{o.Restaurant}}</td>
+        <td>{{o.Description}}</td>
+        <td>{{o.Rating}}</td>
+        <td *ngIf="o.OrderAgain">✅</td>
+    </tr>
+</table>
+
+<app-add-order-form (newOrderEvent)="AddOrder($event)"></app-add-order-form>

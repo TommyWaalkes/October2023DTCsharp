@@ -1,0 +1,15 @@
+<form (ngSubmit)="emitOrder()">
+    <p>Restaurant Name: </p>
+    <input type="text" name="Restaurant" [(ngModel)]="newOrder.Restaurant"/>
+
+    <p>Description</p>
+    <input type="text" name="Description" [(ngModel)]="newOrder.Description"/>
+
+    <p>Rating</p>
+    <input type="number" name="Rating" min="1" max="5" [(ngModel)]="newOrder.Rating"/>
+
+    <p>Order Again?</p>
+    <input type="checkbox" name="OrderAgain" [(ngModel)]="newOrder.OrderAgain"/>
+    
+    <input type="submit" value="Add New Order"/>
+</form>
