@@ -6,17 +6,22 @@ using System.Threading.Tasks;
 
 namespace AnimalComposition
 {
-    internal class EatLight : IEat
+    internal class EatOneFood : IEat
     {
+        public FoodType FoodEaten {  get; set; }
+        public EatOneFood(FoodType foodEaten)
+        {
+            FoodEaten = foodEaten;
+        }
         public int Eat(FoodType food, int amount, List<FoodType> AcceptedFoodTypes)
         {
-            if(food == FoodType.Light)
+            if(food == FoodEaten)
             {
                 return amount;
             }
             else
             {
-                return 0; 
+                return 0;
             }
         }
     }

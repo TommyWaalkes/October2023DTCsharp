@@ -4,12 +4,22 @@
     {
         static void Main(string[] args)
         {
-            Animal a = new Animal(new EatLight(), new SimpleIsFull(), 50);
+            List<IIsFull> conditions = new List<IIsFull>();
+            conditions.Add(new SimpleIsFull());
+            conditions.Add(new SpecificFoodIsFull(FoodType.Meat, 200));
+            Animal a = new Animal(
+                false, 
+                conditions, 
+                1000,
+                FoodType.Plant,
+                FoodType.Meat,
+                FoodType.Light
+                );
 
             Console.WriteLine(a.IsFull());
-            a.Eat(FoodType.Meat, 100);
+            a.Eat(FoodType.Plant, 1500);
             Console.WriteLine(a.IsFull());
-            a.Eat(FoodType.Light, 100);
+            a.Eat(FoodType.Meat, 200);
             Console.WriteLine(a.IsFull());
         }
     }

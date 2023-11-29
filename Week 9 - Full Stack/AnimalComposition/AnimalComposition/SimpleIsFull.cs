@@ -8,9 +8,9 @@ namespace AnimalComposition
 {
     internal class SimpleIsFull : IIsFull
     {
-        public bool IsFull(int caloriesEat, int caloriesNeeded)
+        public bool IsFull(Animal a)
         {
-           return caloriesEat >= caloriesNeeded;
+           return a.CaloriesEaten >= a.CaloriesNeeded;
         }
     }
 }

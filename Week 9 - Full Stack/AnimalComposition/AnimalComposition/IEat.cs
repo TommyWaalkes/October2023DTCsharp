@@ -14,6 +14,6 @@ namespace AnimalComposition
     }
     internal interface IEat
     {
-        public int Eat(FoodType food, int amount);
+        public int Eat(FoodType food, int amount, List<FoodType> AcceptedFoodTypes);
     }
 }

@@ -8,27 +8,57 @@ namespace AnimalComposition
 {
     internal class Animal
     {
-        IEat EatMethod;
-        IIsFull FullMethod;
+        List<IIsFull> FullConditions = new List<IIsFull>();
         public int CaloriesEaten { get; set; } = 0; 
         public int CaloriesNeeded { get; set; }
+        public int TimeEaten { get; set; } = 0; 
+        public bool IsPanda { get; set; } 
+        public List<FoodType> AcceptedFoodTypes { get; set; } = new List<FoodType>();
+        public Dictionary<FoodType, int> foodsToCalories { get; set; } = new Dictionary<FoodType, int>();
 
-        public Animal(IEat eatMethod, IIsFull fullMethod, int caloriesNeeded)
+
+        public Animal(bool isPanda,List<IIsFull> fullConditions, int caloriesNeeded, params FoodType[] foodTypes)
         {
-            EatMethod = eatMethod;
-            FullMethod = fullMethod;
+
+            FullConditions = fullConditions;
             CaloriesNeeded = caloriesNeeded;
+            AcceptedFoodTypes = foodTypes.ToList();
+            IsPanda = isPanda;
+
+            foreach(FoodType type in AcceptedFoodTypes)
+            {
+                foodsToCalories.Add(type, 0);
+            }
         }
 
-        public void Eat(FoodType food, int amount)
+        public void Eat(FoodType type, int amount)
         {
-            int eaten = EatMethod.Eat(food, amount);
-            CaloriesEaten += eaten;
+            if (IsPanda)
+            {
+                amount /= 2;
+            }
+            if (AcceptedFoodTypes.Contains(type))
+            {
+                foodsToCalories[type] += amount;
+                CaloriesEaten += amount;
+                TimeEaten++;
+            }
+
         }
 
         public bool IsFull()
         {
-            return FullMethod.IsFull(CaloriesEaten, CaloriesNeeded);
+            //I can dynamically swap what conditions I care. Every may now have own unique set of conditions 
+           for (int i = 0; i < FullConditions.Count; i++)
+            {
+                bool result = FullConditions[i].IsFull(this);
+                if (result == false)
+                {
+                    return false;
+                }
+            }
+
+           return true;
         }
     }
 }

@@ -8,6 +8,6 @@ namespace AnimalComposition
 {
     internal interface IIsFull
     {
-        public bool IsFull(int caloriesEat, int caloriesNeeded);
+        public bool IsFull(Animal a);
     }
 }
