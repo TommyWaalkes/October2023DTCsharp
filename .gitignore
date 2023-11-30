@@ -771,3 +771,6 @@ dist
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudio,visualstudiocode,csharp,dotnetcore,angular,node
+
+Secret.cs 
+Secret.ts
