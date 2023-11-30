@@ -3,13 +3,15 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { SearchResults } from './search-results';
 import { MovieDetails } from './movie-details';
+import { Secret } from './secret';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MovieAPIService {
-  apiKey:string = "62398519";
-  baseUrl:string =`https://www.omdbapi.com/?apikey=${this.apiKey}&`;
+  keys:Secret = new Secret();
+  
+  baseUrl:string =this.keys.baseUrl;
 //Steps to make an API Service 
 //1) Generate the service 
 //2) Create the model, most easily done via Quicktype 

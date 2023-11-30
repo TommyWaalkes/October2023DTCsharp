@@ -19,6 +19,19 @@ namespace RestaurantFaves
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddDbContext<RestaurantFavesContext>();
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAngularOrigins",
+                builder =>
+                {
+                    builder.WithOrigins(
+                                        "http://localhost:4200"
+                                        )
+                                        .AllowAnyHeader()
+                                        .AllowAnyMethod();
+                });
+            });
+
 
 
 
@@ -30,6 +43,7 @@ namespace RestaurantFaves
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            app.UseCors("AllowAngularOrigins");
 
             app.UseHttpsRedirection();
 

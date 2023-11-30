@@ -9,7 +9,7 @@ namespace IntroFullStackAPI.Model
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=Movies;Trusted_Connection=True;TrustServerCertificate=True");
+                optionsBuilder.UseSqlServer(Secret.ConnectionString);
             }
         }
 
