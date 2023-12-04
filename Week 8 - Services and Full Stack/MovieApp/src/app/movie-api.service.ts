@@ -11,7 +11,7 @@ import { Secret } from './secret';
 export class MovieAPIService {
   keys:Secret = new Secret();
   
-  baseUrl:string =this.keys.baseUrl;
+  baseUrl:string = this.keys.baseUrl;
 //Steps to make an API Service 
 //1) Generate the service 
 //2) Create the model, most easily done via Quicktype 

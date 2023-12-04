@@ -1,0 +1,9 @@
+<div class="squareContainer">
+
+<div class="square" style="border: solid 2px black; margin: 5px;" *ngFor="let p of allProducts">
+    <h2>{{p.name}}</h2>
+    <p>Price: {{p.price}}</p>
+    <p>Id: {{p.productId}}</p>
+</div>
+</div>
+<p>Number of Products: {{allProducts.length}}</p>

@@ -1,0 +1,9 @@
+.squareContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square{
+    width: 20%;
+    padding: 3px;
+}
